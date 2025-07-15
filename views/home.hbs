@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/homestyle.css">
+    
+</head>
+<body>
+    <div class="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary" href="#">Welcome, {{username}}!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#hero-sec">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testi">Testimonials</a>
+        </li>
+      </ul>
+      <a class="btn btn-danger" href="/logout">Logout</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div class="hero-container" id="hero-sec">
+  <div class="container-fluid ">
+  <div class="row d-flex">
+    <div class="col align-middle">
+      <div class="px-2 py-2">
+      <img src="https://img.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_74855-8401.jpg?w=900&t=st=1667037491~exp=1667038091~hmac=7c71ea8afc8f3cc8065c5ccc05d105e3c8a7b76f0133016cb210a7882dc19611" class="img-fluid" alt="...">
+      </div>
+    </div>
+    <div class="col">
+      <div class="px-5 py-5 mt-5">
+        <div class="px-2 py-2 align-middle">
+        <h4>Get all your needs Here</h4>
+        <p> An online learning and teaching marketplace with over 204000 courses and 54 million students. Learn programming, marketing, data science and more.</p>
+        </div>
+        <div class="px-2 py-2">
+          <button type="button" class="btn btn-outline-primary">Checkout Our Courses</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6243eb5b7e.js" crossorigin="anonymous"></script>
+</body>
+</html>

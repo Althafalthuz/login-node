@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="myCard">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="myLeftCtn">
+
+                        <form class="myForm text-center needs-validation" action="/login" method="POST"
+                            onsubmit='return validateForm(this)' autocomplete="off" novalidate>
+                            <header>Login</header>
+                            <div class="form-group">
+                                <i class="fas fa-user"></i>
+                                <input class="myInput" type="text" name="username" placeholder="Username" id="username"
+                                    required  autocomplete="off">
+                                <div class="invalid-feedback" >Please fill out this field.</div>
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fas fa-lock"></i>
+                                <input class="myInput" type="password" name="password" id="password"
+                                    placeholder="Password"  required autocomplete="off">
+                                <div class="invalid-feedback" >Please fill out this field.</div>
+                            </div>
+
+
+                            <input type="submit" class="butt" value="Login">
+                          
+
+                            {{#if error}}
+                            <div class="alert alert-danger" id="errorMsg">{{error}}</div>
+                            {{/if}}
+
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                        <div class="box">
+                            <h2>Welcome Back!</h2>
+
+                            <p>Secure access starts here — log in to continue your journey</p>
+                            <input type="button" class="butt_out" value="Learn More" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+ 
+  
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6243eb5b7e.js" crossorigin="anonymous"></script>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
